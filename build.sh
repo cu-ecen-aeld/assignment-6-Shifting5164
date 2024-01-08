@@ -2,6 +2,8 @@
 # Script to build image for qemu.
 # Author: Siddhant Jajoo.
 
+export LC_ALL="en_US.UTF-8"
+
 git submodule init
 git submodule sync
 git submodule update
