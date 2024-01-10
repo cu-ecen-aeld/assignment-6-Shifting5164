@@ -1,5 +1,6 @@
 inherit core-image
-#CORE_IMAGE_EXTRA_INSTALL += "aesd-assignments"
+# NOTE: need libgcc to prevent "libgcc_s.so.1 must be installed for pthread_exit to work"
+CORE_IMAGE_EXTRA_INSTALL += "aesd-assignments libgcc"
 CORE_IMAGE_EXTRA_INSTALL += "openssh"
 inherit extrausers
 # See https://docs.yoctoproject.org/singleindex.html#extrausers-bbclass
